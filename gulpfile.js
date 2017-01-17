@@ -100,9 +100,11 @@ gulp.task('images', function(){
 gulp.task('live', ['watchLess'] , function () {
 	browsersync.init({
 		port:3333,
+		// startPath:'./src',
 		server : {
-			baseDir : ['./'],
-			index : './'
+			baseDir : './',
+			// index : 'src/html/index.html',
+			directory: true
 		}
 	})
 	gulp.watch(path.less).on('change' , browsersync.reload)
