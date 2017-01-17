@@ -1,3 +1,7 @@
+# 忽略dist目录
+dist
+
+
 # Logs
 logs
 *.log

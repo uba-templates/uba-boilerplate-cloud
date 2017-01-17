@@ -1,0 +1,36 @@
+{
+  "name": "uba-boilerplate-cloud",
+  "version": "1.0.0",
+  "description": "云服务脚手架 - Cloud Platform Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "del": "gulp del",
+    "build": "gulp output",
+    "live": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uba-templates/uba-boilerplate-cloud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uba-templates/uba-boilerplate-cloud/issues"
+  },
+  "homepage": "https://github.com/uba-templates/uba-boilerplate-cloud#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}

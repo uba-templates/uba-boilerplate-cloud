@@ -1,0 +1,35 @@
+.base(){
+  html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+  fieldset, img { border:none; }
+  //img{display: block;}
+  address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+  //ul, ol { list-style:none; }
+  input { padding-top:0; padding-bottom:0; font-family: "Microsoft YaHei",'微软雅黑',arial,sans-serif;}
+  input::-moz-focus-inner { border:none; padding:0; }
+  select, input { vertical-align:middle; }
+  select, input, textarea { font-size:12px; margin:0; }
+  input[type="text"], input[type="password"], textarea { outline-style:none; -webkit-appearance:none; }
+  textarea { resize:none; }
+  input,textarea{background: none; border: none;}
+  table { border-collapse:collapse; }
+  body { color:#000; font:14px/20px "Microsoft YaHei",'微软雅黑',arial,sans-serif; }
+  a { text-decoration:none; }
+  //a:visited { color:#0074b0; }
+  a:hover, a:active, a:focus { /* text-decoration:underline; */ }
+  b{
+    font-weight:normal;
+  }
+  ul,li{
+      list-style: none;
+  }
+  .clearfix() {
+      &:before,
+      &:after {
+          content: " ";
+          display: table;
+      }
+      &:after {
+          clear: both;
+      }
+  }
+}
