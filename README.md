@@ -59,18 +59,12 @@ $ npm install
 
 # 开发实时刷新页面(默认3333端口 )
 $ npm run live
-或
-$ gulp
 
 # 输出编译文件
 $ npm run build
-或
-$ gulp output
 
 # 删除编译文件
 $ npm run del
-或
-$ gulp del
 ```
 
 
@@ -89,7 +83,78 @@ $ gulp del
 
 
 
-#### base.less使用
+#### less基础样式文件及规范
 
-`src/less/base`目录包含目前的基本样式，使用时需要`@import 'base/base.less';`
+* [less教程](http://less.bootcss.com/)
 
+
+* 存放路径`src/less`
+
+```
+目录src/less
+.
+├── base
+├── index.less
+└── widget
+```
+
+* 基本样式文件:`base`文件下
+
+```
+目录/src/less/base
+.
+├── base.less      # reset文件
+├── fun.less       # 函数文件
+└── variable.less  # 页面变量
+```
+
+* 组件样式文件：`widget`
+
+页面中凡涉及到公用部分组件，如返回顶部，可以将此部分单一组件，单独写样式
+
+```
+目录/src/less/widget
+.
+└── backtop.less   # demo示例：返回顶部
+```
+
+* 引入样式文件
+
+以`index.less`为例
+
+```
+// 引入基本样式
+@import 'base/base.less';
+@import 'base/fun.less';
+@import 'base/variable.less';
+
+// 引入组件样式
+@import 'widget/backtop.less';
+
+// 以下为页面自定义样式
+h1{...}
+```
+
+
+
+#### html基础规范
+
+* 头部引入针对ie8 polyfill
+
+* 页面组件部分需要设置开头结束标记
+
+  ```
+  <!-- widget start:返回顶部 -->
+          <div class="backtop">
+              <div class="backtop-icon">
+                  <i class="icon uf uf-triangle-up"></i>
+              </div>
+          </div>
+  <!-- widget end:返回顶部 -->
+  ```
+
+
+
+#### js规范
+
+* 公共部分统一写入`public.js`

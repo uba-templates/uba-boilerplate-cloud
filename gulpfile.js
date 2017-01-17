@@ -102,7 +102,7 @@ gulp.task('live', ['watchLess'] , function () {
 		port:3333,
 		server : {
 			baseDir : ['./'],
-			index : 'src/html/index.html'
+			index : './'
 		}
 	})
 	gulp.watch(path.less).on('change' , browsersync.reload)

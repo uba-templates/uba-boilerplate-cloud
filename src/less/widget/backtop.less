@@ -1,0 +1,35 @@
+// 引入基本样式
+@import '../base/base.less';
+@import '../base/fun.less';
+@import '../base/variable.less';
+
+.backtop{
+    float:right;
+    width:40px;
+    height:40px;
+    position:fixed;
+    right:20px;
+    bottom:20px;;
+    background: #e7eaf1;
+    border-radius: 4px;
+    text-align: center;
+    cursor:pointer;
+    transition: background 05s;
+    display: none;
+    &.active{
+        display: block;
+    }
+    i{
+        transition: color 0.5s;
+        font-size:30px;
+        line-height:40px;
+        color:#fff;
+    }
+    &:hover{
+        background: #d5dbe7;
+        i{
+            color:#666;
+        }
+    }
+
+}
