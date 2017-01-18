@@ -85,9 +85,6 @@ $ npm run del
 
 #### less基础样式文件及规范
 
-* [less教程](http://less.bootcss.com/)
-
-
 * 存放路径`src/less`
 
 ```
@@ -144,13 +141,13 @@ h1{...}
 * 页面组件部分需要设置开头结束标记
 
   ```
-  <!-- widget start:返回顶部 -->
+  <!-- ws:返回顶部 -->
           <div class="backtop">
               <div class="backtop-icon">
                   <i class="icon uf uf-triangle-up"></i>
               </div>
           </div>
-  <!-- widget end:返回顶部 -->
+  <!-- we:返回顶部 -->
   ```
 
 
@@ -158,3 +155,10 @@ h1{...}
 #### js规范
 
 * 公共部分统一写入`public.js`
+
+
+
+#### 教程资料
+
+* [less教程](http://less.bootcss.com/)
+* [Velocity动画教程](http://www.mrfront.com/docs/velocity.js/index.html)
