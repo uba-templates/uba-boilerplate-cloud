@@ -103,7 +103,7 @@ $ npm run del
 ```
 目录/src/less/base
 .
-├── base.less      # reset文件
+├── reset.less      # reset文件
 ├── fun.less       # 函数文件
 └── variable.less  # 页面变量
 ```
